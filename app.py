@@ -75,8 +75,8 @@ def give_me():
   cursor.execute("SELECT * FROM users")
   user = cursor.fetchall()
   conn.commit()
-  jsonify(user)
   conn.close()
+  return jsonify(user)
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+
+  </head>
+  <body>
+    <div>
+      <nav class="navbar bg-dark shadow-sm" style="width: 100%; height: 80px; position: fixed;">
+        <h1 style="color: whitesmoke; position: absolute; margin-top: 5px; margin-left: 90px;">STEAM UkraineAid</h1>
+        <img src="/static/steamIcon.jpeg" alt="Bootstrap" width="80" height="50" style="border-radius: 28px; position: absolute; margin-top: 3px; margin-left: 9px">        
+      </nav>
+      
+    </div>
+      
+
+    <img style="margin-top: 84px; width: 100%; height: 200px; object-fit: cover;" src="https://fe3dd3af-81d9-45fe-a812-197e48ef8fb5-00-9af01gl85ig9.worf.replit.dev/static/image.jpeg">
+    
+    <div class="container">
+     
+     <p class="lead"> This website by Steam provides aid and support to the residents of Ukraine during their time of turmoil and conflict. It offers discounts on gift cards and other Steam items, and accepts contributions to assist the victims of the war. This initiative is available for a limited time and subject to purchase restrictions.</p>
+
+    
+     <h2 class="text-center mt-5 mb-4">Steam Gift Cards </h2>
+
+      <div class="mt-4 row">
+
+        {% for i in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      
+        
+     
+    
+    
+
+      
+      <!--<div class="text-center mt-5 mb-3">
+        <button class="btn btn-primary btn-lg">Donat-
+        </button>
+      </div>-->
+      <div style="width: 100%">
+        
+        <div class="col-12" style="border-bottom: 2px solid #ccc;"> </div>
+      </div>
+     <p class="mt-2 text-center"> Copyright 2024.Steam</p>
+
+    </div>   
+  </body>
+</html>
